@@ -1,0 +1,71 @@
+
+#meusprodutos{
+	color: red;
+}
+
+.inicio{
+	width: 100%;
+}
+.inicio h1{
+	color: #212321;
+	font-size: 5em;
+}
+.inicio small{
+	color: #212321;
+	font-size: 14px;
+}
+.intro{
+	margin-top: 50px;
+	margin-bottom: 100px;
+	width: 1200px;
+}
+.img1{
+	float: left;
+}
+.intro p{
+	color: #212321;
+	padding: 20px;
+	width: 1100px;
+}
+/* sobre pag */
+
+.sobre{
+	position: absolute;
+	margin-top: 250px;
+	margin-left: 60px;
+	margin-bottom: 100px;
+	width: 1200px;
+}
+.sobre p{
+	color: #212321;
+	padding: 20px;
+	width: 395px;
+	float: left;
+}
+
+.demostracao{
+	width: 1200px;
+	margin-left: 130px;
+}
+.novidade{
+	text-align: center;
+	width: 100px;
+	float: left;
+	padding: 5px;
+	margin-right: 14.2em;
+}
+.novidade p{
+	color: black;
+}
+
+select{
+	padding: 1.5px;
+}
+#map{
+	margin-top: 450px;
+	margin-left: -10px;
+}
+#map p{
+	font-weight: bold;
+	font-size: 20px;
+}
