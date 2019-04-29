@@ -72,8 +72,8 @@ class SiteController extends Controller
         //Validações de Formulário
         $this->validate($request, $this->pessoa->rules);
 
-        if(strlen($cpf) >= 12){
-            return redirect()->back()->with(['msgError' => 'Você ultrapassou os limites de caracteres do CPF.']);
+        if(strlen($cpf) != 11){
+            return redirect()->back()->with(['msgError' => 'Este CPF não é válido. O mesmo deve ter 11 dígitos.']);
         }
         if(strlen($nome) >= 51){
             return redirect()->back()->with(['msgError' => 'Você ultrapassou os limites de caracteres do CPF.']);
@@ -135,8 +135,8 @@ class SiteController extends Controller
         $cpf      = $dataForm['cpf'];
         $nome     = $dataForm['nome'];
 
-        if(strlen($cpf) >= 12){
-            return redirect()->back()->with(['msgError' => 'Você ultrapassou os limites de caracteres do CPF.']);
+        if(strlen($cpf) != 11){
+            return redirect()->back()->with(['msgError' => 'Este CPF não é válido. O mesmo deve ter 11 dígitos.']);
         }
         if(strlen($nome) >= 51){
             return redirect()->back()->with(['msgError' => 'Você ultrapassou os limites de caracteres do CPF.']);
